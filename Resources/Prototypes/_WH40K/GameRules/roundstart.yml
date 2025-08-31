@@ -1,0 +1,60 @@
+- type: entity
+  id: Orcs
+  parent: BaseGameRule
+  components:
+  - type: GameRule
+    minPlayers: 0
+  - type: OrcRule
+  - type: AntagSelection
+    selectionTime: IntraPlayerSpawn
+    delay:
+      min: 1
+      max: 3
+    definitions:
+    - prefRoles: [ Orc ]
+      max: 6
+      # playerRatio: 10
+      blacklist:
+        components:
+        - ZombieImmune
+        - AntagImmune
+      briefing:
+        text: orcs-infection-greeting
+        color: Plum
+        # sound: "/Audio/Ambience/Antag/zombie_start.ogg"
+      components:
+      - type: Orc
+      mindRoles:
+      - MindRoleOrc
+
+- type: gamePreset
+  id: Orcs
+  alias:
+  - orc
+  name: orcs-preset-name
+  description: orc-description
+  showInVote: true
+  rules:
+  - Orcs
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: entity
+  parent: MindRoleGhostRoleTeamAntagonistFlock
+  id: MindRoleOrc
+  name: Orc Role
+  components:
+  - type: MindRole
+    antagPrototype: Orc
+    exclusiveAntag: true
+    subtype: role-subtype-orc
+  - type: OrcRole
+
+- type: antag
+  id: Orc
+  name: orc-antag-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-orc-objective
