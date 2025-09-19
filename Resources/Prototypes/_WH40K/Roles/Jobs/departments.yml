@@ -14,7 +14,7 @@
   - MedicalInternWH40K
   - ParamedicWH40K
   - JanitorWH40K
-  - Passenger
+  # - Passenger
 
 - type: department
   id: Governance
