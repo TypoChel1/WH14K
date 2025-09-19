@@ -39,6 +39,7 @@
     sprite: _WH40K/Clothing/Head/Hardsuits/v_officer.rsi
   - type: Clothing
     sprite: _WH40K/Clothing/Head/Hardsuits/v_officer.rsi
+  - type: Item
     heldPrefix: off
   - type: PointLight
     color: "#ffeead"
@@ -66,6 +67,7 @@
     sprite: _WH40K/Clothing/Head/Hardsuits/v_sergeant.rsi
   - type: Clothing
     sprite: _WH40K/Clothing/Head/Hardsuits/v_sergeant.rsi
+  - type: Item
     heldPrefix: off
   - type: PointLight
     color: "#ffeead"
@@ -94,6 +96,7 @@
     sprite: _WH40K/Clothing/Head/Hardsuits/v_grenadier.rsi
   - type: Clothing
     sprite: _WH40K/Clothing/Head/Hardsuits/v_grenadier.rsi
+  - type: Item
     heldPrefix: off
   - type: Item
     size: Small
@@ -174,6 +177,7 @@
     sprite: _WH40K/Clothing/Head/Hardsuits/vanguard_skitarii.rsi
   - type: Clothing
     sprite: _WH40K/Clothing/Head/Hardsuits/vanguard_skitarii.rsi
+  - type: Item
     heldPrefix: off
   - type: PointLight
     color: "#ffeead"
