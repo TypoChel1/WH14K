@@ -34,7 +34,7 @@
   description: department-Mechanicus-description
   color: "#800000"
   roles:
-  - Magos
+  # - Magos
   - Explorator
   - Lexmechanic
   - Genetor
