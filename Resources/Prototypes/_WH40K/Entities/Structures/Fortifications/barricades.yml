@@ -1,3 +1,5 @@
+# Base Barricade
+
 - type: entity
   parent: BaseStructure
   id: BaseBarricadeWH14K
@@ -22,6 +24,8 @@
         - TableMask
         layer:
         - TableLayer
+
+# Imperium Barricades
 
 - type: entity
   id: ImperiumBarricade
