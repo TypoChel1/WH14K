@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Sprited by sqreen2198 (Discord) for WH14K",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "barricadeimperium.png",
+      "directions": 4
+    }
+  ]
+}

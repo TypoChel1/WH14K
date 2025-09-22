@@ -1,0 +1,48 @@
+- type: entity
+  parent: BaseStructure
+  id: BaseBarricade
+  name: barricade
+  description: Just a barricade.
+  abstract: true
+  components:
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: 
+    noRot: false
+  - type: Appearance
+  - type: AtmosExposed
+  - type: Climbable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.39,-0.30"
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  id: ImperiumBarricade
+  parent: BaseBarricade
+  name: Imperium Barricade
+  description: A sturdy barricade made from plasteel and ceramite, commonly used by the Imperium forces for fortifications.
+  sprite: _WH40K/Structures/Fortifications/ImperiumBarricade.rsi
+  tags: [ "WH40K" ]
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: 
+  - type: Damageable
+    damageModifierSet: StructuralMetallic
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
