@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseStructure
-  id: BaseBarricade
+  id: BaseBarricadeWH14K
   name: barricade
   description: Just a barricade.
   abstract: true
@@ -25,7 +25,7 @@
 
 - type: entity
   id: ImperiumBarricade
-  parent: BaseBarricade
+  parent: BaseBarricadeWH14K
   name: Imperium Barricade
   description: A sturdy barricade made from plasteel and ceramite, commonly used by the Imperium forces for fortifications.
   sprite: _WH40K/Structures/Fortifications/ImperiumBarricade.rsi
@@ -34,7 +34,7 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: 
+    sprite: _WH40K/Structures/Fortifications/ImperiumBarricade.rsi
   - type: Damageable
     damageModifierSet: StructuralMetallic
     damageContainer: StructuralInorganic
