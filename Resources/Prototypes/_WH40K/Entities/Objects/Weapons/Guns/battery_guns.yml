@@ -1,4 +1,4 @@
-- type: entity
+Н- type: entity
   parent: BaseItem
   id: WeaponLaserWH40KEnergy
   abstract: true
@@ -228,7 +228,7 @@
     - suitStorage
   - type: Gun
     soundGunshot:
-      path: /Audio/_WH40K/Weapons/Guns/Gunshots/plasmagun.wav
+      path: /Audio/_WH40K/Weapons/Guns/Gunshots/lasgunpew.ogg
 
 - type: entity
   name: лазпистолет
@@ -245,7 +245,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/_WH40K/Weapons/Guns/Gunshots/plasmapist.wav
+      path: /Audio/_WH40K/Weapons/Guns/Gunshots/lasgunpew.ogg
   - type: Item
     sprite: _WH40K/Objects/Weapons/Guns/Battery/laspistol.rsi
     size: Small

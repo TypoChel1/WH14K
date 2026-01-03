@@ -22,15 +22,3 @@
   - type: HideLayerClothing
     slots:
     - Hair
-
-- type: entity
-  parent: ClothingHeadHelmetFlak
-  id: ClothingHeadHelmetBloodPact
-  name: шлем бладпакта
-  description: Стандартный шлем
-  suffix: WH40K, Бладпакт
-  components:
-  - type: Sprite
-    sprite: _WH40K/Clothing/Head/Helmets/heresy_helmet.rsi
-  - type: Clothing
-    sprite: _WH40K/Clothing/Head/Helmets/heresy_helmet.rsi
