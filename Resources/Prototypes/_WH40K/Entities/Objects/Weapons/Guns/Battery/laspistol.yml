@@ -1,0 +1,26 @@
+- type: entity
+  name: лазпистолет
+  parent: WeaponLaserWH40KEnergy
+  id: WeaponLaserPistol
+  description:
+  suffix: WH40K
+  components:
+  - type: Sprite
+    sprite: _WH40K/Objects/Weapons/Guns/Battery/laspistol.rsi
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_WH40K/Weapons/Guns/Gunshots/lasgunpew.ogg
+  - type: Item
+    sprite: _WH40K/Objects/Weapons/Guns/Battery/laspistol.rsi
+    size: Small
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+    slots:
+    - Belt
