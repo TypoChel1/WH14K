@@ -1,0 +1,32 @@
+- type: entity
+  name: чип данных
+  parent: BaseItem
+  id: DataChip
+  suffix: WH40K
+  description: Чип, вероятно, содержащий в себе очень важные разведданные. За них можно получить дополнительное снаряжение!
+  components:
+  - type: Sprite
+    scale: 0.8,0.8
+    sprite: _WH40K/Objects/Specific/intelligence.yml
+    state: datachip
+    layers:
+    - state: datachip
+      map: ["base"]
+  - type: Item
+    size: Small
+  - type: Stack
+    stackType: DataChip
+    count: 1
+    baseLayer: base
+    layerStates:
+    - datachip
+    - datachip_2
+    - datachip_3
+    - datachip_4
+    layerFunction: Threshold
+  - type: StackLayerThreshold
+    thresholds: [ 2, 3, 4 ]
+  - type: Currency
+    price:
+      Intelligence: 2
+  - type: Appearance

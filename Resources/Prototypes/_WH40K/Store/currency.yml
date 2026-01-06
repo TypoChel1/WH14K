@@ -1,0 +1,6 @@
+- type: currency
+  id: Intelligence
+  displayName: Разведданные
+  cash:
+    1: Intelligence
+  canWithdraw: false

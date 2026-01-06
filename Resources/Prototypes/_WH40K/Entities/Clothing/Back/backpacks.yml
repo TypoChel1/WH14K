@@ -79,3 +79,32 @@
   - type: EncryptionKeyHolder
     keysExtractionMethod: Prying
     keySlots: 1
+
+- type: entity
+  parent: [ Clothing, StorePresetVox ]
+  id: ClothingBackpackVox
+  name: вокс рюкзак
+  description:
+  suffix: WH40K, Гвардия
+  components:
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: Sprite
+    sprite: _WH40K/Clothing/Back/Backpacks/voxpack.rsi
+    state: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+#      enum.StorageUiKey.Key:
+#       type: StorageBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Intelligence: 0
+  - type: ToggleableClothing
+    slot: ears
+    clothingPrototype: ClothingHeadsetVoxBackpack

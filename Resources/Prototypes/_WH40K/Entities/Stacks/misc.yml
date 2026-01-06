@@ -1,0 +1,6 @@
+- type: stack
+  id: DataChip
+  name: чипы
+  icon: { sprite: /Textures/_WH40K/Objects/Specific/intelligence.yml, state: datachip }
+  spawn: DataChip
+  maxCount: 4
