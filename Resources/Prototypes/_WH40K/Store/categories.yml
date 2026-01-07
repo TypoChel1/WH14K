@@ -1,0 +1,12 @@
+#Vox
+
+- type: storeCategory
+  id: VoxWeaponry
+  name: Вооружение
+  priority: 0
+  
+- type: storeCategory
+  id: VoxAmmo
+  name: Аммуниция
+  priority: 1
+  

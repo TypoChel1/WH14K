@@ -5,3 +5,11 @@
   frequency: 1845
   color: "#E0FFFF"
   longRange: true
+  
+- type: radioChannel
+  id: Vox
+  name: вокс 
+  keycode: 'w'
+  frequency: 2050
+  color: "#60615b"
+  longRange: false

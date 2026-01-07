@@ -1,0 +1,11 @@
+- type: entity
+  name: коробка батарей лазгана
+  parent: BoxMagazine
+  id: BoxLasgunPowerCell
+  description: Коробка, полная батарей для лазгана
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: LasgunPowerCell
+        amount: 4

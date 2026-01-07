@@ -1,0 +1,13 @@
+- type: entity
+  name: лазган
+  parent: [WeaponLaserWH40KEnergy, BaseGunWieldable]
+  id: WeaponLaserLasgun
+  description: Стандартная противопехотная лазерная винтовка, массово используемая силами Империума.
+  suffix: WH40K
+  components:
+  - type: Clothing
+    sprite: _WH40K/Objects/Weapons/Guns/Battery/lasgun_in-hands.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage

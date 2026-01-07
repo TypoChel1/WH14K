@@ -1,0 +1,13 @@
+- type: entity
+  id: StorePresetVox
+  abstract: true
+  components:
+  - type: Store
+    name: Станция пополнения припасов
+    categories:
+    - VoxWeaponry
+    - VoxAmmo
+    currencyWhitelist:
+    - Intelligence
+    balance:
+      Intelligence: 0
