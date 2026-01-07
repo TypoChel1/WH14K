@@ -11,3 +11,19 @@
     state: statue
     drawdepth: Mobs
     offset: "0.0,0.5"
+    
+- type: entity
+  id: StatueWH1
+  parent: StatueWH
+  suffix: WH40K
+  components:
+  - type: Sprite
+    state: statue1
+    
+- type: entity
+  id: StatueWH1Broken
+  parent: StatueWH
+  suffix: WH40K
+  components:
+  - type: Sprite
+    state: statue1broken

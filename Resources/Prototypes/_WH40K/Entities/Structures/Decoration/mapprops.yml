@@ -1,0 +1,189 @@
+- type: entity
+  name: ящики
+  id: MapPropCrates
+  parent: BaseStructureDynamic
+  description: Какие-то бесхозные ящики
+  suffix: WH40K, Пропы
+  components:
+  - type: Transform
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,0.37,0.1,0.55"
+        density: 200
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Pullable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+          params:
+            volume: 1
+  - type: Damageable
+  - type: Climbable
+  - type: Sprite
+    sprite: _WH40K/Structures/Decorations/mapprops.rsi
+    state: map_prop0
+   
+- type: entity
+  name: блок
+  id: MapPropBlock
+  parent: MapPropCrates
+  description: Тяжёлый блок, преграждающий собой проход
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0,0.6,-0.03,0"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Animateable
+  - type: Sprite
+    state: map_prop1
+
+- type: entity
+  name: блок
+  id: MapPropBlock3
+  parent: MapPropCrates
+  description: Тяжёлый блок, преграждающий собой проход
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,0.3,0.25,0.2"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    state: map_prop7
+
+- type: entity
+  name: камень
+  id: MapPropRock
+  parent: MapPropCrates
+  description: Просто камень
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,0.37,0,0.35"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    state: map_prop2
+    
+- type: entity
+  name: блок
+  id: MapPropBlock1
+  parent: MapPropCrates
+  description: Бесхозный блок, лежащий на земле
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,0.37,0.1,0.5"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    state: map_prop3
+    
+- type: entity
+  name: балка
+  id: MapPropBeam
+  parent: MapPropCrates
+  description: Стальная балка
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0,0.6,-0.03,0"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    state: map_prop4
+    
+- type: entity
+  name: катушка
+  id: MapPropCoil
+  parent: MapPropCrates
+  description: Просто бесхозная катушка
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,0.37,0,0.35"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    state: map_prop5
+    
+- type: entity
+  name: блок
+  id: MapPropBlock2
+  parent: MapPropCrates
+  description: Тяжёлый блок
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,0.37,0.1,0.5"
+        density: 250
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    state: map_prop6
+    

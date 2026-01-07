@@ -9,6 +9,12 @@
     "states": [
         {
             "name": "statue"
+        },
+        {
+            "name": "statue1"
+        },
+        {
+            "name": "statue1broken"
         }
     ]
 }

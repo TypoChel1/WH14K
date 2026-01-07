@@ -1,15 +1,154 @@
 - type: tile
   name: "некронская плитка"
-  id: NecronFloor
+  id: NecronFloorWH40k
   sprite: /Textures/_WH40K/Tiles/necron.png
-  variants: 2
+  variants: 1
   placementVariants:
-  - 1.0
   - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-  itemDrop: FloorTileItemSteel
   heatCapacity: 10000
+
+- type: tile
+  name: "некронская плитка"
+  id: NecronFloorWH40k1
+  sprite: /Textures/_WH40K/Tiles/necron1.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+
+- type: tile
+  name: "кирпичный пол"
+  id: BrickFloorWH40k
+  sprite: /Textures/_WH40K/Tiles/brick.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+
+- type: tile
+  name: "кирпичный пол"
+  id: BrickFloorWH40k1
+  sprite: /Textures/_WH40K/Tiles/brick1.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+
+- type: tile
+  name: "кирпичный пол"
+  id: BrickFloorWH40k2
+  sprite: /Textures/_WH40K/Tiles/brick2.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+
+- type: tile
+  name: "кирпичный пол"
+  id: BrickFloorWH40k3
+  sprite: /Textures/_WH40K/Tiles/brick3.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+
+- type: tile
+  name: "бетонная плитка"
+  id: ConcreteFloorWH40k
+  sprite: /Textures/_WH40K/Tiles/concrete.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+ 
+- type: tile
+  name: "бетонная плитка"
+  id: ConcreteFloorWH40k1
+  sprite: /Textures/_WH40K/Tiles/concrete1.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  
+- type: tile
+  name: "бетонная плитка"
+  id: ConcreteFloorWH40k2
+  sprite: /Textures/_WH40K/Tiles/concrete2.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  
+- type: tile
+  name: "бетонная плитка"
+  id: ConcreteFloorWH40k3
+  sprite: /Textures/_WH40K/Tiles/concrete3.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  
+- type: tile
+  name: "бетонная плитка"
+  id: ConcreteFloorWH40k4
+  sprite: /Textures/_WH40K/Tiles/concrete4.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  
