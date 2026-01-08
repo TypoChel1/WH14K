@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterArmorBasic
   id: ClothingOuterArmorFlakVest
-  name: флак-жилет
-  description: Стандартный противоосколочный жилет Имперского Гвардейца, Кадийского образца. Защитит от осколков, слабых лазеров и мелкокалиберных пуль.
+  name: Флак-броня
+  description: Полный комплект флак-брони для среднестатестического гвардейца. Обеспечивает усреднённую защиту, но слегка стесняет движения из за своего веса.
   suffix: WH40K, Гвардия
   components:
   - type: Sprite
@@ -56,3 +56,27 @@
     sprite: _WH40K/Clothing/OuterClothing/Armor/flakvestheresy.rsi
   - type: Clothing
     sprite: _WH40K/Clothing/OuterClothing/Armor/flakvestheresy.rsi
+
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorFlakVestLight
+  name: Флак-броня (Облегчённая)
+  description: Облегчённая версия стандартной имперской флак-брони, используется в основном разведчиками.
+  suffix: WH40K, Гвардия
+  components:
+  - type: Sprite
+    sprite: _WH40K/Clothing/OuterClothing/Armor/flakvestlight.rsi
+  - type: Clothing
+    sprite: _WH40K/Clothing/OuterClothing/Armor/flakvestlight.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.8
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
