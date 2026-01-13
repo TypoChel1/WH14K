@@ -1,0 +1,11 @@
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateWH40KGward
+  name: гвардейский ящик
+  description: Металлический ящик зеленого цвета. Он надежный, дешевый и простой. Прямо как тот, чьи вещи в нем лежат.
+  suffix: WH40K, Гвардия
+  components:
+  - type: Icon
+    sprite: _WH40K/Structures/Storage/Crates/gward.rsi
+  - type: Sprite
+    sprite: _WH40K/Structures/Storage/Crates/gward.rsi
